@@ -1,0 +1,269 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('https://source.unsplash.com/twukN12EN7c/1920x1080');
+    overflow-x: hidden;
+}
+
+#logo {
+    height: 40px;
+    width: 40;
+    padding-top: 5px;
+    float:left;
+    border-radius: 8px;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #55acee;
+}
+
+nav:nth-child(1) {
+    padding-left: 25px;
+}
+
+.navlink {
+    padding: 5px;
+    padding-top: 12px;
+    padding-left: 20px;
+    color: white;
+    font-size: 1.3em;
+    float: left;
+}
+
+.navlink a, .navlink a:link, .navlink a:visited, .navlink a:hover, .navlink a:active {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #55acee;
+    transition: background-color 0.4s ease;
+}
+
+.navlink a:hover {
+    transition: background-color 0.8s ease;
+    background-color: #66bdff;
+}
+
+.animeForm {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 4px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    min-height: 60px;
+    overflow: hidden;
+}
+
+.animeForm label {
+    display: inline-block;
+    width: 75px;
+    margin-left: 10px;
+    font-size: 1.2em;
+    float: left;
+    color: black;
+}
+
+.animeForm input[type=text] {
+    float:left;
+}
+
+.makeAnimeSubmit {
+    transition: background-color 0.4s ease;
+    display: inline;
+    width: auto;
+    background-color: lightgoldenrodyellow;
+    border-radius: 2px;
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.makeAnimeSubmit:link, .makeAnimeSubmit:visited, .makeAnimeSubmit:hover, .makeAnimeSubmit:active {
+    color: white;
+}
+
+.makeAnimeSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: #338acc;
+}
+
+.mainForm {
+    height: auto;
+    width: 350px;
+    margin-top: 15%;
+    padding: 2%;
+    font-size: 1.2em;
+    float: right;
+    margin-right: 5%;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(201, 76, 76, 0.2);
+}
+
+.mainForm h3 {
+    text-align: center;
+}
+
+.mainForm label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.formSubmit {
+    transition: background-color 0.4s ease;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 14px;
+    font-size: 1.2em;
+    width: 100px;
+    background-color: lightcoral;
+    border-radius: 2px;
+    border-color: lightcoral;
+    padding: 3px 0px;
+    color: white;
+    text-decoration: none;
+}
+
+.formSubmit:link, .formSubmit:visited, .formSubmit:hover, .formSubmit:active {
+    color: white;
+}
+
+.formSubmit:hover {
+    transition: background-color 0.4s ease;
+    background-color: lightcoral;
+}
+
+#user, #pass, #pass2 {
+    text-align: center;
+    font-size: 1.1em;
+    width: auto;
+    border-radius: 6px;
+}
+
+#user:focus, #pass:focus, #pass2:focus {
+    outline: none;
+    box-shadow: 0px 0px 1px 1px #55acee;
+}
+
+#animeMessage {
+    display:none;
+    top: 250px;
+    width: 250px;
+    height: 650px;
+    position: absolute;
+    z-index: 200;
+    right: 0px;
+    overflow: hidden;
+}
+
+#animeMessage h3 {
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+#speech {
+    height: 120px;
+    width: 250px;
+    z-index:300;
+}
+
+#errorMessage {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+
+#anime {
+    z-index: 225;
+    margin-top: -20px;
+    margin-left: 135px;
+    height: 450px;
+    width: 300px;
+    -ms-transform: rotate(330deg);
+    -webkit-transform: rotate(330deg); 
+    transform: rotate(330deg);
+}
+
+#animes {
+    width: 40%;
+    min-width: 400px;
+    border: 2px solid #55acee;
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: contents;
+}
+
+.anime {
+    width: 95%;
+    color: black;
+    margin: 0 auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border: 2px solid lightgoldenrodyellow;
+    border-radius: 4px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    min-height: 60px;
+    overflow: hidden;
+}
+
+.anime:hover {
+    transition: border-color 0.2s ease-out;
+    border-color: rgba(255,255,255, 0.8);
+    transition: background-color 2.6s ease-out;
+    background-color: lightgreen;
+}
+
+img.animeFace {
+    margin-right: 10px;
+    border-radius: 4px;
+    float:left;
+}
+
+h3.emptyAnime {
+    width: 400px;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 18px;
+}
+
+h3.animeName {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+h3.animeAge {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h3.animeLevel {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.anime:first-child {
+    margin-top: 10px;
+}
+
+.anime:last-child {
+    margin-bottom:10px;
+}
