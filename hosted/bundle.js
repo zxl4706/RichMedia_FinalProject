@@ -50,7 +50,7 @@ var AnimeForm = function AnimeForm(props) {
     }), /*#__PURE__*/React.createElement("input", {
       className: "makeAnimeSubmit",
       type: "submit",
-      value: "Make Anime"
+      value: "Search Anime"
     }))
   );
 };

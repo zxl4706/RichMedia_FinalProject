@@ -42,7 +42,7 @@ const AnimeForm = (props) => {
             <label htmlFor="name">Name: </label>
             <input id="animeName" type="text" name="name" placeholder="Anime Name"/>
             <input type="hidden" name="_csrf" value={props.csrf} />
-            <input className="makeAnimeSubmit" type="submit" value="Make Anime" />
+            <input className="makeAnimeSubmit" type="submit" value="Search Anime" />
         </form>
     );
 };
